@@ -18,7 +18,7 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on rightmove that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on rightmove that should be visited. Possible fields are:
 
 - `startUrls`: (Optional) (Array) List of rightmove URLs. It can be search, real estate agent, overseas listing page, property details and many other things!
 
