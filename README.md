@@ -20,14 +20,17 @@ This scraper is under active development. If you have any feature requests you c
 
 The input of this scraper should be JSON containing the list of pages on rightmove that should be visited. Required fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                                    |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (optional) List of rightmove URLs. It can be search, real estate agent, overseas listing page, property details and many other things!                                                                                                                 |
-| endPage              | Integer | (optional) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.                                                          |
-| maxItems             | Integer | (optional) You can limit scraped items. This should be useful when you search through the big lists or search results.                                                                                                |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                            |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                                    |
-| customMapFunction | String  | (optional) Function that takes each objects handle as argument and returns object with executing the function                                                                                                                     |
+- `startUrls`: (Optional) (Array) List of rightmove URLs. It can be search, real estate agent, overseas listing page, property details and many other things!
+
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+
+- `customMapFunction`: (Optional) (String) Function that takes each objects handle as argument and returns object with executing the function.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
