@@ -44,7 +44,7 @@ With the last approach that explained above you can also fetch any interval of p
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape as many items as possible. Therefore, it forefronts all the detail requests. If actor doesn't block very often it'll scrape 100 listings in 2 minutes with ~0.07-0.85 compute units.
+The actor optimized to run blazing fast and scrape as many items as possible. Therefore, it forefronts all the detail requests. If actor doesn't block very often it'll scrape 100 listings in 2 minutes with ~0.07-0.09 compute units.
 
 ### Rightmove Scraper Input example
 
